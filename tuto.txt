@@ -8,6 +8,11 @@ faire un commit :
 	$ git gui
 	-> ajouter les fichier à committer
 	-> décrire le commit
+	$ git commit /!\ il faut add les modif avant
+add modif
+	$ git add <nom du dossier ou de fichier>
+pusher
+	$ git push <nom du remote> <branche locale>:<branche ditstante> 
 ajouter un repo distant
 	$ git remote add <nom du remote> <adresse (*.git)>
 obtenir des infos sur les repos distants :
@@ -15,3 +20,20 @@ obtenir des infos sur les repos distants :
 	-> donne la liste des remotes ajoutés
 	$ git remote show <nom du remote>
 	-> donne des infos sur la remote désignée
+switcher sur une autre version :
+	$ git checkout <nom de la branche/ de tag/ numéro de commit>
+	$ git checkout <nom de la remote>/<nom de la branche/ de tag/ numéro de commit>
+cloner une branche
+	$ git checkout -b <nom de la branche à créer> <branche à cloner>
+supprimer les modifs courantes :
+	$ git checkout -- <nom du dossier>
+synchroniser avec une branche / un tag / un commit distant :
+	$ git reset --hard origin/<ref>
+	ou
+	$ git pull origin/<ref>
+		/!\ si pas d'argument, pull la branche trackée si il y en a une
+		/!\ le distant a des commits depuis la dernière synchro -> push / pull interdit
+supprimer une branche distante
+	$ git push --delete <nom du repo distant> <nom de la branche>
+supprimer une branche locale
+	$ git branch -D <nom de la branche>
