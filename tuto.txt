@@ -1,1 +1,10 @@
-etape 1 : creer un dossier de projet
+creer un dossier de projet
+
+	$ mkdir projet
+initialiser le repo
+	$ git init .
+	Initialized empty Git repository in D:/Dev/balek/superprojet/.git/
+faire un commit :
+	$ git gui
+	-> ajouter les fichier à committer
+	-> décrire le commit
