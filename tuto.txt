@@ -8,3 +8,10 @@ faire un commit :
 	$ git gui
 	-> ajouter les fichier à committer
 	-> décrire le commit
+ajouter un repo distant
+	$ git remote add <nom du remote> <adresse (*.git)>
+obtenir des infos sur les repos distants :
+	$ git remote show
+	-> donne la liste des remotes ajoutés
+	$ git remote show <nom du remote>
+	-> donne des infos sur la remote désignée
